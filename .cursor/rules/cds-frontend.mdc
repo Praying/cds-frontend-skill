@@ -1,0 +1,8 @@
+---
+description: Claude Design System (CDS) frontend design, implementation and refactor workflow
+globs: ["**/*.tsx", "**/*.css", "**/*.ts"]
+alwaysApply: false
+---
+
+Follow the skill at `skills/cds-frontend/SKILL.md` (read it, plus `references/v2-delta.md` for CDS 2.0 work) and the invariants in `AGENTS.md` of https://github.com/Caho1/open-claude-ui.
+Summary: semantic `--cds-*` tokens only; CSS compositor motion by default, the 4 spring presets for drag/layout; single-stroke borders; `tabular-nums` on live numbers; IME guard on Enter; 150ms scroll-pin cooldown; sandbox iframes without `allow-same-origin`; no binary assets. Verify with `npm run typecheck && npm run check:tokens && npm run build`.
